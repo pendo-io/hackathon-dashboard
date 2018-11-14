@@ -12,3 +12,6 @@ class Dashing.Meter extends Dashing.Widget
     meter.attr("data-bgcolor", meter.css("background-color"))
     meter.attr("data-fgcolor", meter.css("color"))
     meter.knob()
+
+  @accessor 'isFailing', ->
+    @get('value') < 100
